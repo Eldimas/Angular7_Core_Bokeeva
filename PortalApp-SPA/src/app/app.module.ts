@@ -30,10 +30,14 @@ const appRoutes: Routes = [
         path        : 'apps',
         loadChildren: './main/apps/apps.module#AppsModule'
     },
-    // {
-    //     path      : '**',
-    //     redirectTo: 'sample'
-    // },
+    {
+        path        : 'admin',
+        loadChildren: './main/admin/admin.module#AdminModule'
+    },
+    {
+        path: 'proba',
+        loadChildren: './main/proba/proba.module#ProbaModule'
+    },
     {
         path      : '**',
         redirectTo: '/pages/auth/login-2'
